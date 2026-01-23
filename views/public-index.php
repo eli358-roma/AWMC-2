@@ -39,7 +39,7 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th scope="col">Significato</th>
+                            <th scope="col">Significato Italiano</th>
                             <th scope="col">Cinese</th>
                             <th scope="col">Pronuncia</th>
                             <th scope="col">Note</th>
