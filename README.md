@@ -37,6 +37,18 @@ Il progetto consiste in dizionario di cinese, compreso di significato della paro
 ## Architettura MVC
 <img width="638" height="165" alt="image" src="https://github.com/user-attachments/assets/b6c316c2-b483-4a0c-a468-2888ca6102f2" />
 
+## Architettura Deployment
+![Dep_ChineseDictionary](https://github.com/user-attachments/assets/74c667ed-ab82-44a8-802a-0b5efc79daf4)
+
+## Schema Database
+|    Dictionary  |                        |
+|----------------|------------------------|
+| id             | INT PK Auto_Increment  | 
+| meaning        | TEXT NOT NULL          |
+| chinese        | VARCHAR(255) NOT NULL  |
+| pronounce      | VARCHAR(255) NOT NULL  |
+| note           | TEXT                   |
+
 ## Scelte progettuali
 1.	Implementazione in pattern MVC
   •	Separazione chiara delle responsabilità  
@@ -60,7 +72,7 @@ Il progetto consiste in dizionario di cinese, compreso di significato della paro
   •	Supporto PHP  
   •	Upload dei file con FTP  
 
-## Pagina Web
+## Link alla pagina Web
 https://chinesedictionary.gt.tc
 
 ## Autore
