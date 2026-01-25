@@ -50,7 +50,7 @@ Il progetto consiste in dizionario di cinese, compreso di significato della paro
 | note           | TEXT                   |
 
 ## Scelte progettuali
-1.	Implementazione in pattern MVC
+1.	Implementazione in pattern MVC  
   •	Separazione chiara delle responsabilità  
   •	Facilità di manutenzione e scalabile per future estensioni  
 3. Database con pattern Singleton  
@@ -63,7 +63,7 @@ Il progetto consiste in dizionario di cinese, compreso di significato della paro
 5. Sicurezza, scelte Implementate:  
   •	SQL Injection: Prevista tramite prepared statements  
   •	HTML Encoding: htmlspecialchars() su tutti gli output  
-  •	Session security: 5 minuti di inattività massima  
+  •	Session security: logout dopo 5 minuti di inattività  
   •	Password Configurabile: In file PHP (index.php), non in database  
   •	Validation Server-side  
 6. Hosting: InfinityFree  
