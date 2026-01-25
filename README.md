@@ -74,6 +74,7 @@ Il progetto consiste in dizionario di cinese, compreso di significato della paro
 
 ## Link alla pagina Web
 https://chinesedictionary.gt.tc
+Password per accedere all'area Admin:AWMC2
 
 ## Autore
 Romagnoli Elisa
