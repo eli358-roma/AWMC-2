@@ -1,4 +1,4 @@
-name: 🚀 Auto-Deploy to InfinityFree
+name: Auto-Deploy to InfinityFree
 
 on:
   push:
@@ -10,15 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: 📥 Download code from GitHub
+    - name: Download code from GitHub
       uses: actions/checkout@v4
     
-    - name: 🔍 Check PHP files
+    - name: Check PHP files
       run: |
-        echo "✅ Checking PHP syntax..."
+        echo "Checking PHP syntax..."
         find . -name "*.php" -type f -exec php -l {} \;
     
-    - name: 📤 Upload to InfinityFree
+    - name: Upload to InfinityFree
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.infinityfree.com
@@ -27,8 +27,8 @@ jobs:
         server-dir: /htdocs/
         dangerous-clean-slate: false
     
-    - name: ✅ Verify deployment
+    - name: Verify deployment
       run: |
-        echo "🎉 Deployment successful!"
-        echo "🌐 Site: https://chinesedictionary.gt.tc"
-        echo "🕐 Time: $(date)"
+        echo "Deployment successful!"
+        echo "Site: https://chinesedictionary.gt.tc"
+        echo "Time: $(date)"
