@@ -1,17 +1,3 @@
-// Funzione per tastiera virtuale
-function insertChar(char) {
-    const pronounceField = document.getElementById('pronounce');
-    if (pronounceField) {
-        pronounceField.value += char;
-        pronounceField.focus();
-    }
-}
-
-// Conferma eliminazione
-function confirmDelete(word) {
-    return confirm(`Sei sicuro di voler eliminare "${word}"?`);
-}
-
 // Auto-hide messages
 document.addEventListener('DOMContentLoaded', function() {
     // Auto-hide messages after 5 seconds
