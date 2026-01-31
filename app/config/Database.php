@@ -5,10 +5,10 @@ class Database {
 
     private function __construct() {
         try {
-            $host = getenv('DB_HOST') ?: 'sql313.infinityfree.com';
-            $dbname = getenv('DB_NAME') ?: 'if0_40406834_chinese_dictionary';
-            $username = getenv('DB_USER') ?: 'if0_40406834';
-            $password = getenv('DB_PASSWORD') ?: 'Niki00358';
+            $host = 'sql313.infinityfree.com';
+            $dbname = 'if0_40406834_chinese_dictionary';
+            $username ='if0_40406834';
+            $password = 'Niki00358';
 
             $this->db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
