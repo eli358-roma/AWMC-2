@@ -6,8 +6,8 @@ session_start();
 require_once __DIR__ . '/app/config/Database.php';
 require_once __DIR__ . '/app/controllers/DictionaryController.php';
 
-$config_password = 'Awmc2';
-$session_timeout = 600;
+$config_password = getenv('ADMIN_PASSWORD') ?: 'Awmc2';
+$session_timeout = getenv('SESSION_TIMEOUT') ?: 600;
 
 // Funzione helper per login
 function isLoggedIn() {
